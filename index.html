@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, intial-scale = 1.0">
+        <title>MAK Creatives</title>
+        <link rel = "stylesheet"
+         type = "text/css"
+         href = "style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="images/logo.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Social</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" 
+                onclick="togglemenu()">
+            </div>
+        
+            <div class="row">
+                <div class="col-1">
+                    <h2>MAK SHARE <br> Made in India</h2>
+                    <h3>Quick and Easy File Sharing App</h3>
+                    <p>(Developer - Ansh Solanki)</p>
+                    <h4>File size: 8.08 MB</h4>
+                    <a href="MAK SHARE.apk">
+                    <button type="button">Download Now
+                        <img src="images/arrow.png">
+                    </button></a>
+                </div>
+                <div class="col-2">
+                    <img src="images/logo.png" class="mak">
+                    <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="images/makshare.png">
+                        <p><small>Download Now</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <img src="images/fb.png">
+                <img src="images/insta.png">
+                <img src="images/youtube.png">
+            </div>
+
+        </div>  
+        
+        <script>
+
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px"
+
+            function togglemenu(){
+
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px";
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px";
+                }          
+
+
+            }
+
+        </script>
+
+    </body>
+</html> 
